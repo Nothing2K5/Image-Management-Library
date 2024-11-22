@@ -25,19 +25,19 @@ public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Inject
-	ICategoryService categoryService;
+	private ICategoryService categoryService;
 
 	@Inject
-	IImageService imageService;
+	private IImageService imageService;
 
 	@Inject
-	IAccountService accountService;
+	private IAccountService accountService;
 
 	@Inject
-	IRoleService roleService;
+	private IRoleService roleService;
 	
 	@Inject
-	IAlbumService albumService;
+	private IAlbumService albumService;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

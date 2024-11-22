@@ -24,10 +24,10 @@ public class ManagerImageController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Inject
-	ICategoryService categoryService;
+	private ICategoryService categoryService;
 
 	@Inject
-	IImageService imageService;
+	private IImageService imageService;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ImageModel imageModel = FormUtil.toModel(ImageModel.class, request);

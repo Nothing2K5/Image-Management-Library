@@ -25,13 +25,13 @@ public class ManagerAccountController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Inject
-	ICategoryService categoryService;
+	private ICategoryService categoryService;
 
 	@Inject
-	IAccountService accountService;
+	private IAccountService accountService;
 
 	@Inject
-	IRoleService roleService;
+	private IRoleService roleService;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

@@ -12,7 +12,7 @@ import com.DRAGON.service.IAccountService;
 public class AccountServive implements IAccountService {
 
 	@Inject
-	IAccountDAO accountDAO;
+	private IAccountDAO accountDAO;
 
 	@Override
 	public AccountModel findByUserNameAndPassword(String userName, String password) {

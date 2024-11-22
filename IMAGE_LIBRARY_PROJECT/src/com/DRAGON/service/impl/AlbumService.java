@@ -12,7 +12,7 @@ import com.DRAGON.service.IAlbumService;
 public class AlbumService implements IAlbumService {
 
 	@Inject
-	IAlbumDAO albumDAO;
+	private IAlbumDAO albumDAO;
 
 	@Override
 	public List<AlbumModel> findAll() {

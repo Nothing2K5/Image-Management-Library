@@ -22,7 +22,7 @@ import com.DRAGON.service.IImageService;
 public class ImageService implements IImageService {
 
 	@Inject
-	IImageDAO imageDAO;
+	private IImageDAO imageDAO;
 
 	@Override
 	public List<ImageModel> findAll() {
@@ -99,7 +99,6 @@ public class ImageService implements IImageService {
 			connection.setReadTimeout(5000); // 5 seconds
 			int status = connection.getResponseCode();
 			if (status == HttpURLConnection.HTTP_OK) {
-				// Xác định hệ điều hành
 	            String os = System.getProperty("os.name").toLowerCase();
 	            String userHome = System.getProperty("user.home");
 	            Path downloadPath;

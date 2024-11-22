@@ -23,7 +23,7 @@ public class ManagerCategoryController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Inject
-	ICategoryService categoryService;
+	private ICategoryService categoryService;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CategoryModel categoryModel = FormUtil.toModel(CategoryModel.class, request);

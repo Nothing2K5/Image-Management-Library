@@ -22,13 +22,13 @@ public class ExploreController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Inject
-	ICategoryService categoryService;
+	private ICategoryService categoryService;
 
 	@Inject
-	IImageService imageService;
+	private IImageService imageService;
 	
 	@Inject
-	IAlbumService albumService;
+	private IAlbumService albumService;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ImageModel imageModel = FormUtil.toModel(ImageModel.class, request);

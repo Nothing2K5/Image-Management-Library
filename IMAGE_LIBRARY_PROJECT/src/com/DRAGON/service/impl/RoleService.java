@@ -11,7 +11,7 @@ import com.DRAGON.service.IRoleService;
 public class RoleService implements IRoleService {
 
 	@Inject
-	IRoleDAO roleDao;
+	private IRoleDAO roleDao;
 
 	@Override
 	public List<RoleModel> findAll() {

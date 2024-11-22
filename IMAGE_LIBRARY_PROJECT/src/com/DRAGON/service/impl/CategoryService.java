@@ -12,7 +12,7 @@ import com.DRAGON.service.ICategoryService;
 public class CategoryService implements ICategoryService {
 
 	@Inject
-	ICategoryDAO categoryDAO;
+	private ICategoryDAO categoryDAO;
 
 	@Override
 	public List<CategoryModel> findAll() {
